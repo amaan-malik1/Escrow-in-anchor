@@ -1,10 +1,16 @@
-use anchor_lan::prelude::*;
+use anchor_lang::prelude::*;
+mod make_offer;
 
-declare_id("000");
+use  crate::{make_offer::*}
 
+declare_id!("6R6uUFxA8UbWdFmzVSRRAZfkBfE79qovCEioCmzgw62t");
 
-pub mod escrow_program{
+#[program]
+pub mod escrow_program {
     use super::*;
 
-    pub fn 
+    pub fn make_offer(ctx: Context<MakeOffer>) -> Result<()> {
+        Ok(())
+    }
 }
+
